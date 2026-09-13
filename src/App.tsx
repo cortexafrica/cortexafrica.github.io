@@ -14,8 +14,10 @@ import {
 
 /** La fonction serveur qui recoit les demandes. Elle ne detient aucune cle cote
  *  navigateur : c'est elle qui parle a Resend, jamais cette page. */
+// Projet Supabase « served », separe de celui de Melody : ses secrets y vivent,
+// et une erreur de notre cote ne doit pas pouvoir toucher le site d'un client.
 const POINT_ENVOI =
-  'https://muflighiudxzeefozwtv.supabase.co/functions/v1/audit';
+  'https://jnkeuevzyuxlegytlyhf.supabase.co/functions/v1/audit';
 
 /** Assez permissif pour accepter « exemple.com » sans protocole, assez strict
  *  pour refuser une phrase. On ne valide pas plus fin ici : c'est la fonction
