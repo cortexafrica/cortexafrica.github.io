@@ -54,7 +54,7 @@ export const formulaire = {
   manque: 'We need both the address and an email to reach you.',
   urlInvalide: 'That does not look like a website address.',
   emailInvalide: 'That does not look like an email address.',
-  echec: 'Something broke on our side. Write to audit@cortexafrica.com instead.',
+  echec: 'Something broke on our side. Try again in a minute — nothing was lost.',
 };
 
 /** Les quatre defauts. Deux d'entre eux etaient dans notre propre code, ecrit
@@ -202,7 +202,12 @@ export const faq = {
 
 export const pied = {
   gauche: '© 2026 Cortex Africa SAS. All rights reserved.',
-  droite: 'audit@cortexafrica.com',
+  // Pas d'adresse e-mail tant qu'on n'en possede pas une. La page a ete mise en
+  // ligne avec « audit@cortexafrica.com », un domaine qui appartient a quelqu'un
+  // d'autre — verifie : il resout vers Squarespace. On envoyait des visiteurs
+  // chez un tiers. Corrige dans l'heure, et devenu un controle du skill.
+  droite: 'Send us a URL',
+  droiteLien: '#top',
 };
 
 export const meta = {

@@ -172,7 +172,7 @@ export default function App() {
       </header>
 
       <main>
-        <section className="heros enveloppe">
+        <section className="heros enveloppe" id="top">
           <h1 className="heros__titre">{heros.titre}</h1>
           <p className="heros__lede">{heros.lede}</p>
 
@@ -265,7 +265,7 @@ export default function App() {
 
       <footer className="pied enveloppe">
         <span>{pied.gauche}</span>
-        <a href={`mailto:${pied.droite}`}>{pied.droite}</a>
+        <a href={pied.droiteLien}>{pied.droite}</a>
       </footer>
     </>
   );
