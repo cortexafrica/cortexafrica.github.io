@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Served — see what your website actually serves</title>
+    <meta
+      name="description"
+      content="Free website audit. We check what your site really sends to visitors — fonts, links, numbers, security — and email you the findings within 24 hours."
+    />
+    <link rel="canonical" href="https://cortexafrica.github.io/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cortexafrica.github.io/" />
+    <meta property="og:title" content="Served — see what your website actually serves" />
+    <meta
+      property="og:description"
+      content="Free website audit. We check what your site really sends to visitors, and email you the findings within 24 hours."
+    />
+    <meta property="og:image" content="https://cortexafrica.github.io/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="theme-color" content="#f4f3f0" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Une seule precharge, et c'est la police du titre. Precharger les sept
+         autres ferait entrer en concurrence des fichiers dont aucun n'est
+         necessaire au premier rendu. -->
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/plex-mono-600-latin.woff2"
+      crossorigin
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Lisible sans JavaScript : pour les apercus de liens, les robots
+         d'indexation, et quiconque arrive sur une connexion qui lache. La
+         promesse et le moyen de nous joindre doivent survivre a tout. -->
+    <noscript>
+      <h1>Your site looks fine. That’s the problem.</h1>
+      <p>
+        We check what your site actually serves — not what the code says it
+        serves — and email you the report within 24 hours. Free, no account.
+      </p>
+      <p>
+        Send the address of your site to
+        <a href="mailto:audit@cortexafrica.com">audit@cortexafrica.com</a>.
+      </p>
+    </noscript>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

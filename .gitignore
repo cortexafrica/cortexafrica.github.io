@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.DS_Store
+
+# Aucune cle, jamais.
+.env
+.env.*
+*.key
+*.pem

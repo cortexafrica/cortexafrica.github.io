@@ -1,0 +1,77 @@
+{
+  "_note": "Chaque nombre affiché sur la page vient d'ici, et de nulle part ailleurs. Un chiffre sans source dans ce fichier est refusé par check_facts.py. Les engagements sont marqués comme tels : ce ne sont pas des mesures, ce sont des promesses, et on ne les tient que si on les écrit comme des promesses.",
+  "facts": [
+    {
+      "id": "melody.defauts",
+      "label": "Défauts invisibles trouvés en une session",
+      "value": 4,
+      "unit": "défauts",
+      "source": "cortexafrica.sas/decisions/log.md — entrée du 12 septembre 2026 : sous-ensemble de police vietnamien, devise en euros sur un site en dollars, relais à spam, contrôle d'origine troué"
+    },
+    {
+      "id": "police.avant",
+      "label": "Caractères couverts par la police servie, avant correction",
+      "value": 1,
+      "unit": "sur 77",
+      "source": "demo/police/mesurer.py exécuté sur archivo-VIETNAMIEN-le-fautif.woff2, le fichier réellement servi en production"
+    },
+    {
+      "id": "police.apres",
+      "label": "Caractères ASCII couverts après correction",
+      "value": 95,
+      "unit": "sur 95",
+      "source": "demo/police/mesurer.py exécuté sur archivo-LATIN-le-correct.woff2"
+    },
+    {
+      "id": "controles.nombre",
+      "label": "Contrôles automatiques exécutés sur un site",
+      "value": 7,
+      "unit": "contrôles",
+      "source": "premium-web-studio/SKILL.md, tableau des scripts : check_budget, check_facts, check_release, check_security, check_media, review_site, preflight"
+    },
+    {
+      "id": "audit.delai",
+      "label": "Délai de remise du rapport",
+      "value": 24,
+      "unit": "heures",
+      "type": "engagement",
+      "source": "ENGAGEMENT, pas une mesure. Tenu à la main tant que l'audit n'est pas hébergé. À revoir dès que le volume dépasse ce qu'une personne peut traiter dans la journée."
+    },
+    {
+      "id": "audit.prix",
+      "label": "Prix de l'audit",
+      "value": 0,
+      "unit": "USD",
+      "type": "engagement",
+      "source": "ENGAGEMENT du 13 septembre 2026 : l'audit est gratuit et sans compte à créer. C'est lui qui produit les clients dont M2 a besoin ; le facturer viderait M1 de son sens."
+    },
+    {
+      "id": "police.espaces",
+      "label": "Caractères visibles rendus par la police fautive dans « Open a dollar store. »",
+      "value": 0,
+      "unit": "caractères",
+      "source": "Mesuré le 13 septembre 2026 avec fontTools sur preuve-archivo-fautif.woff2, le fichier réellement servi : les 3 seuls caractères couverts de la phrase sont ses 3 espaces. Aucune lettre."
+    },
+    {
+      "id": "police.poids",
+      "label": "Poids du fichier de police inutile téléchargé par chaque visiteur",
+      "value": 13,
+      "unit": "Ko",
+      "source": "Taille de preuve-archivo-fautif.woff2 : 13 240 octets, mesurée sur le fichier"
+    },
+    {
+      "id": "police.couverts_fautif",
+      "label": "Caractères couverts par la police fautive dans la phrase",
+      "value": 3,
+      "unit": "caractères",
+      "source": "Mesuré avec fontTools sur preuve-archivo-fautif.woff2 : 3 caractères de « Open a dollar store. » sont couverts, et ce sont ses 3 espaces."
+    },
+    {
+      "id": "police.total_page",
+      "label": "Caractères distincts de la page auditée",
+      "value": 77,
+      "unit": "caractères",
+      "source": "Sortie de check_release.py sur melodysupplyco.com le 12 septembre 2026 : « la police couvre 1 caractère sur 77 de la page »."
+    }
+  ]
+}
